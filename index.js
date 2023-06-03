@@ -1,41 +1,40 @@
-// Your code here
 var questionsArr = [
   {
     question: "The sun rises in the west.",
-    answer: false,
+    answer: false
   },
   {
     question: "The Earth is round.",
-    answer: true,
+    answer: true
   },
   {
     question: "Mount Everest is the tallest mountain in the world.",
-    answer: true,
+    answer: true
   },
   {
     question: "Pinguins can fly.",
-    answer: false,
+    answer: false
   },
   {
     question: "Trees produce oxygen.",
-    answer: true,
+    answer: true
   },
 ];
 
 function runQuiz() {
-  var correctAnswers = 0;
+  var correctAnswers = 0
 
   for (var i = 0; i < questionsArr.length; i++) {
-    var question = questionsArr[i].question;
-    var answer = questionsArr[i].answer;
+    var question = questionsArr[i].question
+    var answer = questionsArr[i].answer
 
-    var userAnswer = confirm(question);
+    var userAnswer = confirm(question)
 
     if (userAnswer === answer) {
       correctAnswers++;
     }
   }
 
-  var percentageCorrect = (correctAnswers / questionsArr.length) * 100;
-  alert("You scored " + percentageCorrect + "% in the quiz.");
+  var percentageCorrect = (correctAnswers / questionsArr.length) * 100
+  alert("You scored " + percentageCorrect + "% in the quiz.")
 }
